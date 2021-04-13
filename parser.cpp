@@ -434,7 +434,7 @@ void parser() {
 
 
 	}
-	tokens.push_back(make_pair(make_pair("$", "$"), -1));
+	tokens.push_back(make_pair(make_pair("$", "$"), tokens.back().second + 1));
 	fclose(stdin);
 
 	// }
@@ -547,12 +547,15 @@ void parser() {
 
 		}
 		else if (lexeme == "$") {
-			flag2 = 1;
+			errline = line;
+			flag2 = 3;
+			cout << "The Program is Incomplete!" << endl;
 			break;
 		}
 		else if (stack_top == "$") {
 			errline = line;
 			flag2 = 2;
+			cout << "Some Extra part, not Expecetd!" << endl;
 			break;
 
 		}
@@ -601,7 +604,7 @@ void parser() {
 
 	// cout << "=========================================================================================================================================================================================================\n";
 
-	if (flag2 == 1 || flag2 == 2) {
+	if (flag2 == 1 || flag2 == 2 || flag2 == 3) {
 		if (flag2 == 1) {
 			cout << endl << "Parsing Process complete, but with errors in the program " << endl;
 		}
@@ -613,7 +616,19 @@ void parser() {
 			cout << endl << "Line " << it.first << ": " << "missing " << it.second << endl;
 		}
 		if (flag2 == 2) {
-			cout << endl << "line " << errline << " onwards not expected" << endl;
+			cout << endl << "line " << errline << " onwards not expected. The Extra part is:" << endl;
+			while (tokens.size() != 1) {
+				pair<string, string> f = tokens.front().first;
+				cout << f.second << endl;
+				tokens.pop_front();
+			}
+		}
+		if (flag2 == 3) {
+			cout << endl << "The Program is Incomplete! The following Terminals/Non-Terminals are expectd from line " << errline << ":" << endl;
+			while (s.size() != 1) {
+				cout << s.top() << endl;
+				s.pop();
+			}
 		}
 		exit(0);
 	}
