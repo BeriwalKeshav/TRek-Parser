@@ -1,0 +1,19 @@
+main { 
+    write("hello");
+    if a>b{
+        write("hello");
+    }
+    int a;
+    int b;
+    a=5;
+    b=6;
+    if (a>b) and (b<c){
+        read(y);
+    }
+    write(y);
+    int c=5;
+    #c=5
+    int y=(a-b);
+    #y=a-b;
+    write(y);
+}

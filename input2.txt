@@ -1,0 +1,20 @@
+_add {
+	input parameter [int a, int b]
+	output parameter [int c];
+	c=a+b;
+	return [c];
+
+}
+main { 
+	int a;
+	int b;
+	int c;
+	a=5;
+	b=6;
+	[c]= _ass [a,b];
+	write("Addition");
+	write(c);
+}
+
+
+
