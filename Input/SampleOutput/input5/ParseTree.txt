@@ -188,48 +188,13 @@ PROGRAM
                             tk_semicol_operator
                     STMTS
                         STMT
-                            DECLSTMT
-                                tk_int_keyword
-                                tk_ident
+                            IOSTMT
+                                tk_write
+                                tk_lparen_operator
+                                VAR
+                                    tk_ident
+                                tk_rparen_operator
                                 tk_semicol_operator
                         STMTS
-                            STMT
-                                FUNCALSTMT
-                                    OUTPUT_PARAM
-                                        tk_lsquarebracket_operator
-                                        IDLIST
-                                            tk_ident
-                                            MOREID
-                                                epsilon
-                                        tk_rsquarebracket_operator
-                                        tk_assignment_operator
-                                    tk_funid
-                                    INPUT_PARAM
-                                        tk_lsquarebracket_operator
-                                        IDLIST
-                                            tk_ident
-                                            MOREID
-                                                epsilon
-                                        tk_rsquarebracket_operator
-                                    tk_semicol_operator
-                            STMTS
-                                STMT
-                                    IOSTMT
-                                        tk_write
-                                        tk_lparen_operator
-                                        VAR
-                                            tk_string_literal
-                                        tk_rparen_operator
-                                        tk_semicol_operator
-                                STMTS
-                                    STMT
-                                        IOSTMT
-                                            tk_write
-                                            tk_lparen_operator
-                                            VAR
-                                                tk_ident
-                                            tk_rparen_operator
-                                            tk_semicol_operator
-                                    STMTS
-                                        epsilon
+                            epsilon
         tk_rcurlybracket_operator

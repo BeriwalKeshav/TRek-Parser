@@ -1,0 +1,494 @@
+Last login: Wed Apr 14 14:11:21 on ttys003
+ ~/De/B/I/Course H/Year 4/Sem-2/Compiler Comstruction/assign/TRekParser/Src  master !3 ?4 ▓▒░ g++ -std=c++17 main.cpp lexer.cpp parser.cpp -o main                          ░▒▓ ✔  2.6.5 Ruby  02:12:38 PM 
+ ~/De/B/I/Course H/Year 4/Sem-2/Compi/a/TRekParser/Src  master !3 ?4 ▓▒░ ./main                                                                                             ░▒▓ ✔  2.6.5 Ruby  02:13:02 PM 
+Welcome To TreK parser!
+
+Enter the input file name
+../Input/input4.txt
+tk_funid                                          , string _hello                                  , line number 1
+tk_lcurlybracket_operator                         , string {                                       , line number 1
+tk_input_keyword                                  , string input                                   , line number 2
+tk_parameter                                      , string parameter                               , line number 2
+tk_lsquarebracket_operator                        , string [                                       , line number 2
+tk_int_keyword                                    , string int                                     , line number 2
+tk_ident                                          , string a                                       , line number 2
+tk_comma_operator                                 , string ,                                       , line number 2
+tk_int_keyword                                    , string int                                     , line number 2
+tk_ident                                          , string b                                       , line number 2
+tk_rsquarebracket_operator                        , string ]                                       , line number 2
+tk_output_keyword                                 , string output                                  , line number 3
+tk_parameter                                      , string parameter                               , line number 3
+tk_lsquarebracket_operator                        , string [                                       , line number 3
+tk_int_keyword                                    , string int                                     , line number 3
+tk_ident                                          , string c                                       , line number 3
+tk_rsquarebracket_operator                        , string ]                                       , line number 3
+tk_semicol_operator                               , string ;                                       , line number 3
+tk_ident                                          , string c                                       , line number 4
+tk_assignment_operator                            , string =                                       , line number 4
+tk_ident                                          , string a                                       , line number 4
+tk_plus_operator                                  , string +                                       , line number 4
+tk_ident                                          , string b                                       , line number 4
+tk_semicol_operator                               , string ;                                       , line number 4
+tk_return_keyword                                 , string return                                  , line number 5
+tk_lsquarebracket_operator                        , string [                                       , line number 5
+tk_ident                                          , string c                                       , line number 5
+tk_rsquarebracket_operator                        , string ]                                       , line number 5
+tk_semicol_operator                               , string ;                                       , line number 5
+tk_rcurlybracket_operator                         , string }                                       , line number 7
+tk_main                                           , string main                                    , line number 8
+tk_lcurlybracket_operator                         , string {                                       , line number 8
+tk_int_keyword                                    , string int                                     , line number 9
+tk_ident                                          , string a                                       , line number 9
+tk_semicol_operator                               , string ;                                       , line number 9
+tk_ident                                          , string a                                       , line number 10
+tk_assignment_operator                            , string =                                       , line number 10
+tk_int_literal                                    , string 5                                       , line number 10
+tk_semicol_operator                               , string ;                                       , line number 10
+tk_ident                                          , string b                                       , line number 11
+tk_assignment_operator                            , string =                                       , line number 11
+tk_int_literal                                    , string 6                                       , line number 11
+tk_semicol_operator                               , string ;                                       , line number 11
+tk_if_keyword                                     , string if                                      , line number 12
+tk_ident                                          , string a                                       , line number 12
+tk_ident                                          , string b                                       , line number 12
+tk_lcurlybracket_operator                         , string {                                       , line number 13
+tk_write                                          , string write                                   , line number 14
+tk_lparen_operator                                , string (                                       , line number 14
+tk_string_literal                                 , string "Yes"                                   , line number 14
+tk_rparen_operator                                , string )                                       , line number 14
+tk_semicol_operator                               , string ;                                       , line number 14
+tk_rcurlybracket_operator                         , string }                                       , line number 15
+tk_lsquarebracket_operator                        , string [                                       , line number 16
+tk_ident                                          , string c                                       , line number 16
+tk_rsquarebracket_operator                        , string ]                                       , line number 16
+tk_assignment_operator                            , string =                                       , line number 16
+tk_funid                                          , string _hello                                  , line number 16
+tk_lsquarebracket_operator                        , string [                                       , line number 16
+tk_ident                                          , string a                                       , line number 16
+tk_comma_operator                                 , string ,                                       , line number 16
+tk_ident                                          , string b                                       , line number 16
+tk_rsquarebracket_operator                        , string ]                                       , line number 16
+tk_semicol_operator                               , string ;                                       , line number 16
+tk_write                                          , string write                                   , line number 17
+tk_lparen_operator                                , string (                                       , line number 17
+tk_string_literal                                 , string "Tial file is =  "                      , line number 17
+tk_rparen_operator                                , string )                                       , line number 17
+tk_semicol_operator                               , string ;                                       , line number 17
+tk_write                                          , string write                                   , line number 18
+tk_lparen_operator                                , string (                                       , line number 18
+tk_ident                                          , string c                                       , line number 18
+tk_rparen_operator                                , string )                                       , line number 18
+tk_semicol_operator                               , string ;                                       , line number 18
+tk_rcurlybracket_operator                         , string }                                       , line number 19
+
+Lexical Analysis Done!
+
+Time for Synatx Analysis
+
+For only the Final Result Press 1
+To see the Final Result with stack contents Press 2
+To see the Final Result with Level Order Tree Traversal Press 3
+To see the Final Result with all of the above Press 4
+4
+
+Enter the number of elements that you want see in the stack at once!
+Press 3 for the best view
+3
+=========================================================================================================================================================================================================
+Stack(First 3 tokens, stack_top=right side)						Input(First 3 Inputs, starting pointer=left side)					Action
+=========================================================================================================================================================================================================
+||$PROGRAM||                                                                         ||(tk_funid,_hello)(tk_lcurlybracket_operator,{)(tk_input_keyword,input)||           Rule 1
+=========================================================================================================================================================================================================
+||$MAINFUNCOTHERFUNC||                                                               ||(tk_funid,_hello)(tk_lcurlybracket_operator,{)(tk_input_keyword,input)||           Rule 3
+=========================================================================================================================================================================================================
+||MAINFUNCOTHERFUNCFUNCTION||                                                        ||(tk_funid,_hello)(tk_lcurlybracket_operator,{)(tk_input_keyword,input)||           Rule 5
+=========================================================================================================================================================================================================
+||INPUT_PARtk_lcurlybracket_operatortk_funid||                                       ||(tk_funid,_hello)(tk_lcurlybracket_operator,{)(tk_input_keyword,input)||           POP tk_funid
+=========================================================================================================================================================================================================
+||OUTPUT_PARINPUT_PARtk_lcurlybracket_operator||                                     ||(tk_lcurlybracket_operator,{)(tk_input_keyword,input)(tk_parameter,parameter)||    POP tk_lcurlybracket_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatorOUTPUT_PARINPUT_PAR||                                           ||(tk_input_keyword,input)(tk_parameter,parameter)(tk_lsquarebracket_operator,[)||   Rule 6
+=========================================================================================================================================================================================================
+||tk_lsquarebracket_operatortk_parametertk_input_keyword||                           ||(tk_input_keyword,input)(tk_parameter,parameter)(tk_lsquarebracket_operator,[)||   POP tk_input_keyword
+=========================================================================================================================================================================================================
+||PARAMETER_LISTtk_lsquarebracket_operatortk_parameter||                             ||(tk_parameter,parameter)(tk_lsquarebracket_operator,[)(tk_int_keyword,int)||       POP tk_parameter
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorPARAMETER_LISTtk_lsquarebracket_operator||               ||(tk_lsquarebracket_operator,[)(tk_int_keyword,int)(tk_ident,a)||                   POP tk_lsquarebracket_operator
+=========================================================================================================================================================================================================
+||OUTPUT_PARtk_rsquarebracket_operatorPARAMETER_LIST||                               ||(tk_int_keyword,int)(tk_ident,a)(tk_comma_operator,,)||                            Rule 9
+=========================================================================================================================================================================================================
+||REMAINING_LISTtk_identDATA_TYPE||                                                  ||(tk_int_keyword,int)(tk_ident,a)(tk_comma_operator,,)||                            Rule 10
+=========================================================================================================================================================================================================
+||REMAINING_LISTtk_identtk_int_keyword||                                             ||(tk_int_keyword,int)(tk_ident,a)(tk_comma_operator,,)||                            POP tk_int_keyword
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorREMAINING_LISTtk_ident||                                 ||(tk_ident,a)(tk_comma_operator,,)(tk_int_keyword,int)||                            POP tk_ident
+=========================================================================================================================================================================================================
+||OUTPUT_PARtk_rsquarebracket_operatorREMAINING_LIST||                               ||(tk_comma_operator,,)(tk_int_keyword,int)(tk_ident,b)||                            Rule 13
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorPARAMETER_LISTtk_comma_operator||                        ||(tk_comma_operator,,)(tk_int_keyword,int)(tk_ident,b)||                            POP tk_comma_operator
+=========================================================================================================================================================================================================
+||OUTPUT_PARtk_rsquarebracket_operatorPARAMETER_LIST||                               ||(tk_int_keyword,int)(tk_ident,b)(tk_rsquarebracket_operator,])||                   Rule 9
+=========================================================================================================================================================================================================
+||REMAINING_LISTtk_identDATA_TYPE||                                                  ||(tk_int_keyword,int)(tk_ident,b)(tk_rsquarebracket_operator,])||                   Rule 10
+=========================================================================================================================================================================================================
+||REMAINING_LISTtk_identtk_int_keyword||                                             ||(tk_int_keyword,int)(tk_ident,b)(tk_rsquarebracket_operator,])||                   POP tk_int_keyword
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorREMAINING_LISTtk_ident||                                 ||(tk_ident,b)(tk_rsquarebracket_operator,])(tk_output_keyword,output)||             POP tk_ident
+=========================================================================================================================================================================================================
+||OUTPUT_PARtk_rsquarebracket_operatorREMAINING_LIST||                               ||(tk_rsquarebracket_operator,])(tk_output_keyword,output)(tk_parameter,parameter)|| Rule 14
+=========================================================================================================================================================================================================
+||OUTPUT_PARtk_rsquarebracket_operatorepsilon||                                      ||(tk_rsquarebracket_operator,])(tk_output_keyword,output)(tk_parameter,parameter)|| POP epsilon
+=========================================================================================================================================================================================================
+||tk_semicol_operatorOUTPUT_PARtk_rsquarebracket_operator||                          ||(tk_rsquarebracket_operator,])(tk_output_keyword,output)(tk_parameter,parameter)|| POP tk_rsquarebracket_operator
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorOUTPUT_PAR||                                               ||(tk_output_keyword,output)(tk_parameter,parameter)(tk_lsquarebracket_operator,[)|| Rule 7
+=========================================================================================================================================================================================================
+||tk_lsquarebracket_operatortk_parametertk_output_keyword||                          ||(tk_output_keyword,output)(tk_parameter,parameter)(tk_lsquarebracket_operator,[)|| POP tk_output_keyword
+=========================================================================================================================================================================================================
+||PARAMETER_LISTtk_lsquarebracket_operatortk_parameter||                             ||(tk_parameter,parameter)(tk_lsquarebracket_operator,[)(tk_int_keyword,int)||       POP tk_parameter
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorPARAMETER_LISTtk_lsquarebracket_operator||               ||(tk_lsquarebracket_operator,[)(tk_int_keyword,int)(tk_ident,c)||                   POP tk_lsquarebracket_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorPARAMETER_LIST||                      ||(tk_int_keyword,int)(tk_ident,c)(tk_rsquarebracket_operator,])||                   Rule 9
+=========================================================================================================================================================================================================
+||REMAINING_LISTtk_identDATA_TYPE||                                                  ||(tk_int_keyword,int)(tk_ident,c)(tk_rsquarebracket_operator,])||                   Rule 10
+=========================================================================================================================================================================================================
+||REMAINING_LISTtk_identtk_int_keyword||                                             ||(tk_int_keyword,int)(tk_ident,c)(tk_rsquarebracket_operator,])||                   POP tk_int_keyword
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorREMAINING_LISTtk_ident||                                 ||(tk_ident,c)(tk_rsquarebracket_operator,])(tk_semicol_operator,;)||                POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorREMAINING_LIST||                      ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_ident,c)||                Rule 14
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorepsilon||                             ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_ident,c)||                POP epsilon
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatortk_rsquarebracket_operator||                               ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_ident,c)||                POP tk_rsquarebracket_operator
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_ident,c)(tk_assignment_operator,=)||                    POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||OTHERFUNCtk_rcurlybracket_operatorSTMTS||                                          ||(tk_ident,c)(tk_assignment_operator,=)(tk_ident,a)||                               Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_ident,c)(tk_assignment_operator,=)(tk_ident,a)||                               Rule 19
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSASSIGNSTMT||                                         ||(tk_ident,c)(tk_assignment_operator,=)(tk_ident,a)||                               Rule 27
+=========================================================================================================================================================================================================
+||ARITHEXPtk_assignment_operatortk_ident||                                           ||(tk_ident,c)(tk_assignment_operator,=)(tk_ident,a)||                               POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatorARITHEXPtk_assignment_operator||                                ||(tk_assignment_operator,=)(tk_ident,a)(tk_plus_operator,+)||                       POP tk_assignment_operator
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorARITHEXP||                                                 ||(tk_ident,a)(tk_plus_operator,+)(tk_ident,b)||                                     Rule 28
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERM||                                                  ||(tk_ident,a)(tk_plus_operator,+)(tk_ident,b)||                                     Rule 31
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEFACTOR||                                                          ||(tk_ident,a)(tk_plus_operator,+)(tk_ident,b)||                                     Rule 35
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEVAR||                                                             ||(tk_ident,a)(tk_plus_operator,+)(tk_ident,b)||                                     Rule 40
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEtk_ident||                                                        ||(tk_ident,a)(tk_plus_operator,+)(tk_ident,b)||                                     POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERMPRIME||                                             ||(tk_plus_operator,+)(tk_ident,b)(tk_semicol_operator,;)||                          Rule 33
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMEepsilon||                                               ||(tk_plus_operator,+)(tk_ident,b)(tk_semicol_operator,;)||                          POP epsilon
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorEXPPRIME||                                                 ||(tk_plus_operator,+)(tk_ident,b)(tk_semicol_operator,;)||                          Rule 29
+=========================================================================================================================================================================================================
+||EXPPRIMETERMLOWPOP||                                                               ||(tk_plus_operator,+)(tk_ident,b)(tk_semicol_operator,;)||                          Rule 38
+=========================================================================================================================================================================================================
+||EXPPRIMETERMtk_plus_operator||                                                     ||(tk_plus_operator,+)(tk_ident,b)(tk_semicol_operator,;)||                          POP tk_plus_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERM||                                                  ||(tk_ident,b)(tk_semicol_operator,;)(tk_return_keyword,return)||                    Rule 31
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEFACTOR||                                                          ||(tk_ident,b)(tk_semicol_operator,;)(tk_return_keyword,return)||                    Rule 35
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEVAR||                                                             ||(tk_ident,b)(tk_semicol_operator,;)(tk_return_keyword,return)||                    Rule 40
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEtk_ident||                                                        ||(tk_ident,b)(tk_semicol_operator,;)(tk_return_keyword,return)||                    POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERMPRIME||                                             ||(tk_semicol_operator,;)(tk_return_keyword,return)(tk_lsquarebracket_operator,[)||  Rule 33
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMEepsilon||                                               ||(tk_semicol_operator,;)(tk_return_keyword,return)(tk_lsquarebracket_operator,[)||  POP epsilon
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorEXPPRIME||                                                 ||(tk_semicol_operator,;)(tk_return_keyword,return)(tk_lsquarebracket_operator,[)||  Rule 30
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorepsilon||                                                  ||(tk_semicol_operator,;)(tk_return_keyword,return)(tk_lsquarebracket_operator,[)||  POP epsilon
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_return_keyword,return)(tk_lsquarebracket_operator,[)||  POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||OTHERFUNCtk_rcurlybracket_operatorSTMTS||                                          ||(tk_return_keyword,return)(tk_lsquarebracket_operator,[)(tk_ident,c)||             Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_return_keyword,return)(tk_lsquarebracket_operator,[)(tk_ident,c)||             Rule 23
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSRETSTMT||                                            ||(tk_return_keyword,return)(tk_lsquarebracket_operator,[)(tk_ident,c)||             Rule 68
+=========================================================================================================================================================================================================
+||tk_semicol_operatorOPRESTMTtk_return_keyword||                                     ||(tk_return_keyword,return)(tk_lsquarebracket_operator,[)(tk_ident,c)||             POP tk_return_keyword
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorOPRESTMT||                                                 ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         Rule 69
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorIDLISTtk_lsquarebracket_operator||                       ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         POP tk_lsquarebracket_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorIDLIST||                              ||(tk_ident,c)(tk_rsquarebracket_operator,])(tk_semicol_operator,;)||                Rule 65
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorMOREIDtk_ident||                                         ||(tk_ident,c)(tk_rsquarebracket_operator,])(tk_semicol_operator,;)||                POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorMOREID||                              ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_rcurlybracket_operator,})||Rule 67
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorepsilon||                             ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_rcurlybracket_operator,})||POP epsilon
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatortk_rsquarebracket_operator||                               ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_rcurlybracket_operator,})||POP tk_rsquarebracket_operator
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_rcurlybracket_operator,})(tk_main,main)||               POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||OTHERFUNCtk_rcurlybracket_operatorSTMTS||                                          ||(tk_rcurlybracket_operator,})(tk_main,main)(tk_lcurlybracket_operator,{)||         Rule 16
+=========================================================================================================================================================================================================
+||OTHERFUNCtk_rcurlybracket_operatorepsilon||                                        ||(tk_rcurlybracket_operator,})(tk_main,main)(tk_lcurlybracket_operator,{)||         POP epsilon
+=========================================================================================================================================================================================================
+||MAINFUNCOTHERFUNCtk_rcurlybracket_operator||                                       ||(tk_rcurlybracket_operator,})(tk_main,main)(tk_lcurlybracket_operator,{)||         POP tk_rcurlybracket_operator
+=========================================================================================================================================================================================================
+||$MAINFUNCOTHERFUNC||                                                               ||(tk_main,main)(tk_lcurlybracket_operator,{)(tk_int_keyword,int)||                  Rule 4
+=========================================================================================================================================================================================================
+||$MAINFUNCepsilon||                                                                 ||(tk_main,main)(tk_lcurlybracket_operator,{)(tk_int_keyword,int)||                  POP epsilon
+=========================================================================================================================================================================================================
+||$MAINFUNC||                                                                        ||(tk_main,main)(tk_lcurlybracket_operator,{)(tk_int_keyword,int)||                  Rule 2
+=========================================================================================================================================================================================================
+||STMTStk_lcurlybracket_operatortk_main||                                            ||(tk_main,main)(tk_lcurlybracket_operator,{)(tk_int_keyword,int)||                  POP tk_main
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_lcurlybracket_operator||                          ||(tk_lcurlybracket_operator,{)(tk_int_keyword,int)(tk_ident,a)||                    POP tk_lcurlybracket_operator
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_int_keyword,int)(tk_ident,a)(tk_semicol_operator,;)||                          Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_int_keyword,int)(tk_ident,a)(tk_semicol_operator,;)||                          Rule 17
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSDECLSTMT||                                           ||(tk_int_keyword,int)(tk_ident,a)(tk_semicol_operator,;)||                          Rule 24
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_identtk_int_keyword||                                        ||(tk_int_keyword,int)(tk_ident,a)(tk_semicol_operator,;)||                          POP tk_int_keyword
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatortk_ident||                                                 ||(tk_ident,a)(tk_semicol_operator,;)(tk_ident,a)||                                  POP tk_ident
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_ident,a)(tk_assignment_operator,=)||                    POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_ident,a)(tk_assignment_operator,=)(tk_int_literal,5)||                         Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_ident,a)(tk_assignment_operator,=)(tk_int_literal,5)||                         Rule 19
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSASSIGNSTMT||                                         ||(tk_ident,a)(tk_assignment_operator,=)(tk_int_literal,5)||                         Rule 27
+=========================================================================================================================================================================================================
+||ARITHEXPtk_assignment_operatortk_ident||                                           ||(tk_ident,a)(tk_assignment_operator,=)(tk_int_literal,5)||                         POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatorARITHEXPtk_assignment_operator||                                ||(tk_assignment_operator,=)(tk_int_literal,5)(tk_semicol_operator,;)||              POP tk_assignment_operator
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorARITHEXP||                                                 ||(tk_int_literal,5)(tk_semicol_operator,;)(tk_ident,b)||                            Rule 28
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERM||                                                  ||(tk_int_literal,5)(tk_semicol_operator,;)(tk_ident,b)||                            Rule 31
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEFACTOR||                                                          ||(tk_int_literal,5)(tk_semicol_operator,;)(tk_ident,b)||                            Rule 35
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEVAR||                                                             ||(tk_int_literal,5)(tk_semicol_operator,;)(tk_ident,b)||                            Rule 41
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEtk_int_literal||                                                  ||(tk_int_literal,5)(tk_semicol_operator,;)(tk_ident,b)||                            POP tk_int_literal
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERMPRIME||                                             ||(tk_semicol_operator,;)(tk_ident,b)(tk_assignment_operator,=)||                    Rule 33
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMEepsilon||                                               ||(tk_semicol_operator,;)(tk_ident,b)(tk_assignment_operator,=)||                    POP epsilon
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorEXPPRIME||                                                 ||(tk_semicol_operator,;)(tk_ident,b)(tk_assignment_operator,=)||                    Rule 30
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorepsilon||                                                  ||(tk_semicol_operator,;)(tk_ident,b)(tk_assignment_operator,=)||                    POP epsilon
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_ident,b)(tk_assignment_operator,=)||                    POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_ident,b)(tk_assignment_operator,=)(tk_int_literal,6)||                         Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_ident,b)(tk_assignment_operator,=)(tk_int_literal,6)||                         Rule 19
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSASSIGNSTMT||                                         ||(tk_ident,b)(tk_assignment_operator,=)(tk_int_literal,6)||                         Rule 27
+=========================================================================================================================================================================================================
+||ARITHEXPtk_assignment_operatortk_ident||                                           ||(tk_ident,b)(tk_assignment_operator,=)(tk_int_literal,6)||                         POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatorARITHEXPtk_assignment_operator||                                ||(tk_assignment_operator,=)(tk_int_literal,6)(tk_semicol_operator,;)||              POP tk_assignment_operator
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorARITHEXP||                                                 ||(tk_int_literal,6)(tk_semicol_operator,;)(tk_if_keyword,if)||                      Rule 28
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERM||                                                  ||(tk_int_literal,6)(tk_semicol_operator,;)(tk_if_keyword,if)||                      Rule 31
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEFACTOR||                                                          ||(tk_int_literal,6)(tk_semicol_operator,;)(tk_if_keyword,if)||                      Rule 35
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEVAR||                                                             ||(tk_int_literal,6)(tk_semicol_operator,;)(tk_if_keyword,if)||                      Rule 41
+=========================================================================================================================================================================================================
+||EXPPRIMETERMPRIMEtk_int_literal||                                                  ||(tk_int_literal,6)(tk_semicol_operator,;)(tk_if_keyword,if)||                      POP tk_int_literal
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMETERMPRIME||                                             ||(tk_semicol_operator,;)(tk_if_keyword,if)(tk_ident,a)||                            Rule 33
+=========================================================================================================================================================================================================
+||tk_semicol_operatorEXPPRIMEepsilon||                                               ||(tk_semicol_operator,;)(tk_if_keyword,if)(tk_ident,a)||                            POP epsilon
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorEXPPRIME||                                                 ||(tk_semicol_operator,;)(tk_if_keyword,if)(tk_ident,a)||                            Rule 30
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorepsilon||                                                  ||(tk_semicol_operator,;)(tk_if_keyword,if)(tk_ident,a)||                            POP epsilon
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_if_keyword,if)(tk_ident,a)||                            POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_if_keyword,if)(tk_ident,a)(tk_ident,b)||                                       Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_if_keyword,if)(tk_ident,a)(tk_ident,b)||                                       Rule 22
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSCONDSTMT||                                           ||(tk_if_keyword,if)(tk_ident,a)(tk_ident,b)||                                       Rule 57
+=========================================================================================================================================================================================================
+||tk_lcurlybracket_operatorBOOLEXPtk_if_keyword||                                    ||(tk_if_keyword,if)(tk_ident,a)(tk_ident,b)||                                       POP tk_if_keyword
+=========================================================================================================================================================================================================
+||STMTStk_lcurlybracket_operatorBOOLEXP||                                            ||(tk_ident,a)(tk_ident,b)(tk_lcurlybracket_operator,{)||                            Rule 46
+=========================================================================================================================================================================================================
+||VARRELOPtk_ident||                                                                 ||(tk_ident,a)(tk_ident,b)(tk_lcurlybracket_operator,{)||                            POP tk_ident
+=========================================================================================================================================================================================================
+||tk_lcurlybracket_operatorVARRELOP||                                                ||(tk_ident,b)(tk_lcurlybracket_operator,{)(tk_write,write)||                        SYNCH POP RELOP line#12
+=========================================================================================================================================================================================================
+||STMTStk_lcurlybracket_operatorVAR||                                                ||(tk_ident,b)(tk_lcurlybracket_operator,{)(tk_write,write)||                        Rule 40
+=========================================================================================================================================================================================================
+||STMTStk_lcurlybracket_operatortk_ident||                                           ||(tk_ident,b)(tk_lcurlybracket_operator,{)(tk_write,write)||                        POP tk_ident
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_lcurlybracket_operator||                          ||(tk_lcurlybracket_operator,{)(tk_write,write)(tk_lparen_operator,()||              POP tk_lcurlybracket_operator
+=========================================================================================================================================================================================================
+||CONDSTMTPRIMEtk_rcurlybracket_operatorSTMTS||                                      ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Yes")||                  Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Yes")||                  Rule 21
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSIOSTMT||                                             ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Yes")||                  Rule 61
+=========================================================================================================================================================================================================
+||VARtk_lparen_operatortk_write||                                                    ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Yes")||                  POP tk_write
+=========================================================================================================================================================================================================
+||tk_rparen_operatorVARtk_lparen_operator||                                          ||(tk_lparen_operator,()(tk_string_literal,"Yes")(tk_rparen_operator,))||            POP tk_lparen_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rparen_operatorVAR||                                         ||(tk_string_literal,"Yes")(tk_rparen_operator,))(tk_semicol_operator,;)||           Rule 43
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rparen_operatortk_string_literal||                           ||(tk_string_literal,"Yes")(tk_rparen_operator,))(tk_semicol_operator,;)||           POP tk_string_literal
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatortk_rparen_operator||                                       ||(tk_rparen_operator,))(tk_semicol_operator,;)(tk_rcurlybracket_operator,})||       POP tk_rparen_operator
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_rcurlybracket_operator,})(tk_lsquarebracket_operator,[)||POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||CONDSTMTPRIMEtk_rcurlybracket_operatorSTMTS||                                      ||(tk_rcurlybracket_operator,})(tk_lsquarebracket_operator,[)(tk_ident,c)||          Rule 16
+=========================================================================================================================================================================================================
+||CONDSTMTPRIMEtk_rcurlybracket_operatorepsilon||                                    ||(tk_rcurlybracket_operator,})(tk_lsquarebracket_operator,[)(tk_ident,c)||          POP epsilon
+=========================================================================================================================================================================================================
+||STMTSCONDSTMTPRIMEtk_rcurlybracket_operator||                                      ||(tk_rcurlybracket_operator,})(tk_lsquarebracket_operator,[)(tk_ident,c)||          POP tk_rcurlybracket_operator
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSCONDSTMTPRIME||                                      ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         Rule 59
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSepsilon||                                            ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         POP epsilon
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         Rule 20
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSFUNCALSTMT||                                         ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         Rule 62
+=========================================================================================================================================================================================================
+||INPUT_PARAMtk_funidOUTPUT_PARAM||                                                  ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         Rule 63
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorIDLISTtk_lsquarebracket_operator||                       ||(tk_lsquarebracket_operator,[)(tk_ident,c)(tk_rsquarebracket_operator,])||         POP tk_lsquarebracket_operator
+=========================================================================================================================================================================================================
+||tk_assignment_operatortk_rsquarebracket_operatorIDLIST||                           ||(tk_ident,c)(tk_rsquarebracket_operator,])(tk_assignment_operator,=)||             Rule 65
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorMOREIDtk_ident||                                         ||(tk_ident,c)(tk_rsquarebracket_operator,])(tk_assignment_operator,=)||             POP tk_ident
+=========================================================================================================================================================================================================
+||tk_assignment_operatortk_rsquarebracket_operatorMOREID||                           ||(tk_rsquarebracket_operator,])(tk_assignment_operator,=)(tk_funid,_hello)||        Rule 67
+=========================================================================================================================================================================================================
+||tk_assignment_operatortk_rsquarebracket_operatorepsilon||                          ||(tk_rsquarebracket_operator,])(tk_assignment_operator,=)(tk_funid,_hello)||        POP epsilon
+=========================================================================================================================================================================================================
+||tk_funidtk_assignment_operatortk_rsquarebracket_operator||                         ||(tk_rsquarebracket_operator,])(tk_assignment_operator,=)(tk_funid,_hello)||        POP tk_rsquarebracket_operator
+=========================================================================================================================================================================================================
+||INPUT_PARAMtk_funidtk_assignment_operator||                                        ||(tk_assignment_operator,=)(tk_funid,_hello)(tk_lsquarebracket_operator,[)||        POP tk_assignment_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatorINPUT_PARAMtk_funid||                                           ||(tk_funid,_hello)(tk_lsquarebracket_operator,[)(tk_ident,a)||                      POP tk_funid
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatorINPUT_PARAM||                                              ||(tk_lsquarebracket_operator,[)(tk_ident,a)(tk_comma_operator,,)||                  Rule 64
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorIDLISTtk_lsquarebracket_operator||                       ||(tk_lsquarebracket_operator,[)(tk_ident,a)(tk_comma_operator,,)||                  POP tk_lsquarebracket_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorIDLIST||                              ||(tk_ident,a)(tk_comma_operator,,)(tk_ident,b)||                                    Rule 65
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorMOREIDtk_ident||                                         ||(tk_ident,a)(tk_comma_operator,,)(tk_ident,b)||                                    POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorMOREID||                              ||(tk_comma_operator,,)(tk_ident,b)(tk_rsquarebracket_operator,])||                  Rule 66
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorIDLISTtk_comma_operator||                                ||(tk_comma_operator,,)(tk_ident,b)(tk_rsquarebracket_operator,])||                  POP tk_comma_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorIDLIST||                              ||(tk_ident,b)(tk_rsquarebracket_operator,])(tk_semicol_operator,;)||                Rule 65
+=========================================================================================================================================================================================================
+||tk_rsquarebracket_operatorMOREIDtk_ident||                                         ||(tk_ident,b)(tk_rsquarebracket_operator,])(tk_semicol_operator,;)||                POP tk_ident
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorMOREID||                              ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_write,write)||            Rule 67
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rsquarebracket_operatorepsilon||                             ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_write,write)||            POP epsilon
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatortk_rsquarebracket_operator||                               ||(tk_rsquarebracket_operator,])(tk_semicol_operator,;)(tk_write,write)||            POP tk_rsquarebracket_operator
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_write,write)(tk_lparen_operator,()||                    POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Tial file is =  ")||     Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Tial file is =  ")||     Rule 21
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSIOSTMT||                                             ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Tial file is =  ")||     Rule 61
+=========================================================================================================================================================================================================
+||VARtk_lparen_operatortk_write||                                                    ||(tk_write,write)(tk_lparen_operator,()(tk_string_literal,"Tial file is =  ")||     POP tk_write
+=========================================================================================================================================================================================================
+||tk_rparen_operatorVARtk_lparen_operator||                                          ||(tk_lparen_operator,()(tk_string_literal,"Tial file is =  ")(tk_rparen_operator,))||POP tk_lparen_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rparen_operatorVAR||                                         ||(tk_string_literal,"Tial file is =  ")(tk_rparen_operator,))(tk_semicol_operator,;)||Rule 43
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rparen_operatortk_string_literal||                           ||(tk_string_literal,"Tial file is =  ")(tk_rparen_operator,))(tk_semicol_operator,;)||POP tk_string_literal
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatortk_rparen_operator||                                       ||(tk_rparen_operator,))(tk_semicol_operator,;)(tk_write,write)||                    POP tk_rparen_operator
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_write,write)(tk_lparen_operator,()||                    POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_write,write)(tk_lparen_operator,()(tk_ident,c)||                               Rule 15
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSSTMT||                                               ||(tk_write,write)(tk_lparen_operator,()(tk_ident,c)||                               Rule 21
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTSIOSTMT||                                             ||(tk_write,write)(tk_lparen_operator,()(tk_ident,c)||                               Rule 61
+=========================================================================================================================================================================================================
+||VARtk_lparen_operatortk_write||                                                    ||(tk_write,write)(tk_lparen_operator,()(tk_ident,c)||                               POP tk_write
+=========================================================================================================================================================================================================
+||tk_rparen_operatorVARtk_lparen_operator||                                          ||(tk_lparen_operator,()(tk_ident,c)(tk_rparen_operator,))||                         POP tk_lparen_operator
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rparen_operatorVAR||                                         ||(tk_ident,c)(tk_rparen_operator,))(tk_semicol_operator,;)||                        Rule 40
+=========================================================================================================================================================================================================
+||tk_semicol_operatortk_rparen_operatortk_ident||                                    ||(tk_ident,c)(tk_rparen_operator,))(tk_semicol_operator,;)||                        POP tk_ident
+=========================================================================================================================================================================================================
+||STMTStk_semicol_operatortk_rparen_operator||                                       ||(tk_rparen_operator,))(tk_semicol_operator,;)(tk_rcurlybracket_operator,})||       POP tk_rparen_operator
+=========================================================================================================================================================================================================
+||tk_rcurlybracket_operatorSTMTStk_semicol_operator||                                ||(tk_semicol_operator,;)(tk_rcurlybracket_operator,})($,$)||                        POP tk_semicol_operator
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorSTMTS||                                                  ||(tk_rcurlybracket_operator,})($,$)||                                               Rule 16
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operatorepsilon||                                                ||(tk_rcurlybracket_operator,})($,$)||                                               POP epsilon
+=========================================================================================================================================================================================================
+||$tk_rcurlybracket_operator||                                                       ||(tk_rcurlybracket_operator,})($,$)||                                               POP tk_rcurlybracket_operator
+=========================================================================================================================================================================================================
+||$||                                                                                ||($,$)||                                                                            POP $
+=========================================================================================================================================================================================================
+
+
+Level Order Traversal of the Parse Tree:
+
+
+ The Level Order Tree Traversal of the Parse Tree formed is:
+Level 0 : PROGRAM 
+Level 1 : OTHERFUNC MAINFUNC 
+Level 2 : FUNCTION OTHERFUNC tk_main tk_lcurlybracket_operator STMTS tk_rcurlybracket_operator 
+Level 3 : tk_funid tk_lcurlybracket_operator INPUT_PAR OUTPUT_PAR tk_semicol_operator STMTS tk_rcurlybracket_operator epsilon STMT STMTS 
+Level 4 : tk_input_keyword tk_parameter tk_lsquarebracket_operator PARAMETER_LIST tk_rsquarebracket_operator tk_output_keyword tk_parameter tk_lsquarebracket_operator PARAMETER_LIST tk_rsquarebracket_operator STMT STMTS DECLSTMT STMT STMTS 
+Level 5 : DATA_TYPE tk_ident REMAINING_LIST DATA_TYPE tk_ident REMAINING_LIST ASSIGNSTMT STMT STMTS tk_int_keyword tk_ident tk_semicol_operator ASSIGNSTMT STMT STMTS 
+Level 6 : tk_int_keyword tk_comma_operator PARAMETER_LIST tk_int_keyword epsilon tk_ident tk_assignment_operator ARITHEXP tk_semicol_operator RETSTMT epsilon tk_ident tk_assignment_operator ARITHEXP tk_semicol_operator ASSIGNSTMT STMT STMTS 
+Level 7 : DATA_TYPE tk_ident REMAINING_LIST TERM EXPPRIME tk_return_keyword OPRESTMT tk_semicol_operator TERM EXPPRIME tk_ident tk_assignment_operator ARITHEXP tk_semicol_operator CONDSTMT STMT STMTS 
+Level 8 : tk_int_keyword epsilon FACTOR TERMPRIME LOWPOP TERM EXPPRIME tk_lsquarebracket_operator IDLIST tk_rsquarebracket_operator FACTOR TERMPRIME epsilon TERM EXPPRIME tk_if_keyword BOOLEXP tk_lcurlybracket_operator STMTS tk_rcurlybracket_operator CONDSTMTPRIME FUNCALSTMT STMT STMTS 
+Level 9 : VAR epsilon tk_plus_operator FACTOR TERMPRIME epsilon tk_ident MOREID VAR epsilon FACTOR TERMPRIME epsilon tk_ident RELOP VAR STMT STMTS epsilon OUTPUT_PARAM tk_funid INPUT_PARAM tk_semicol_operator IOSTMT STMT STMTS 
+Level 10 : tk_ident VAR epsilon epsilon tk_int_literal VAR epsilon tk_ident IOSTMT epsilon tk_lsquarebracket_operator IDLIST tk_rsquarebracket_operator tk_assignment_operator tk_lsquarebracket_operator IDLIST tk_rsquarebracket_operator tk_write tk_lparen_operator VAR tk_rparen_operator tk_semicol_operator IOSTMT epsilon 
+Level 11 : tk_ident tk_int_literal tk_write tk_lparen_operator VAR tk_rparen_operator tk_semicol_operator tk_ident MOREID tk_ident MOREID tk_string_literal tk_write tk_lparen_operator VAR tk_rparen_operator tk_semicol_operator 
+Level 12 : tk_string_literal epsilon tk_comma_operator IDLIST tk_ident 
+Level 13 : tk_ident MOREID 
+Level 14 : epsilon 
+=========================================================================================================================================================================================================
+
+Parsing Process complete, but with errors in the program 
+
+Line 12: missing RELOP
+ ~/De/B/I/Course H/Year 4/Sem-2/Compi/a/TRekParser/Src  master !3 ?4 ▓▒░                                                                                               ░▒▓ ✔  14s  2.6.5 Ruby  02:13:18 PM 
