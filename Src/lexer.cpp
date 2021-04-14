@@ -568,11 +568,11 @@ void lexer() {
 	FILE *fp;
 	// printf("Welcome To TreK lexer!\n");
 	printf("Enter the input file name\n");
-	char filename[100];
+	char filename[1000];
 	scanf("%s", filename);
 	fp = fopen(filename, "r");
 
-	fp2 = fopen("Loutput.txt", "w");
+	fp2 = fopen("../Output/Loutput.txt", "w");
 	if (fp == NULL) {
 		printf("Supplied file failed to open.\n");
 		exit(0);

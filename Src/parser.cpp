@@ -93,7 +93,7 @@ void parser() {
 		cin >> size;
 	}
 	// cout << choice << endl;
-	freopen("Loutput.txt", "r", stdin);
+	freopen("../Output/Loutput.txt", "r", stdin);
 	vector<vector<string> >rules;
 	rules = { {"synch"},
 		{"OTHERFUNC" , "MAINFUNC"},
@@ -398,7 +398,7 @@ void parser() {
 		{{"OPRESTMT", "tk_lsquarebracket_operator"}, 69},
 	};
 	// cout << "Hello" << endl;
-	file.open("ParseTree.txt");
+	file.open("../Output/ParseTree.txt");
 
 	stack<string> s;
 	deque<pair<pair<string, string>, int> > tokens;
