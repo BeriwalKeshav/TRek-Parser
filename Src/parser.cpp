@@ -153,7 +153,7 @@ void parser() {
 		{"tk_and"},
 		{"tk_or"},
 		{"tk_if_keyword" , "BOOLEXP", "tk_lcurlybracket_operator" , "STMTS", "tk_rcurlybracket_operator" , "CONDSTMTPRIME"},
-		{"tk_else_keyword", "tk_lcurlybracket_operator", "OTHERSTMTS" , "tk_rcurlybracket_operator"},
+		{"tk_else_keyword", "tk_lcurlybracket_operator", "STMTS" , "tk_rcurlybracket_operator"},
 		{"epsilon"},
 		{"tk_read_keyword", "tk_lparen_operator", "tk_ident", "tk_rparen_operator" , "tk_semicol_operator"},
 		{"tk_write", "tk_lparen_operator" , "VAR" , "tk_rparen_operator" , "tk_semicol_operator"},
